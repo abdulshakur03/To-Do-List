@@ -2,12 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins",monospace;
+  font-family: "Poppins", monospace;
 }
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-width: 500px;
+  height: 100vh;
   background: linear-gradient(135deg, #153677, #4e085f);
   padding-top: 50px;
 }
