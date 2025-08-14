@@ -5,14 +5,17 @@ function addList() {
   if (input.value === "") {
     alert("input text to be added to the list");
   } else {
+    const div = document.createElement("div");
+    listContainer.appendChild(div);
+    div.classList.add("row");
     const li = document.createElement("li");
 
     li.innerHTML = input.value.trim();
-    listContainer.appendChild(li);
+    div.appendChild(li);
 
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
-    li.appendChild(span);
+    div.appendChild(span);
   }
 
   input.value = "";

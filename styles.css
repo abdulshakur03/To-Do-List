@@ -14,6 +14,7 @@
 
 .card {
   background-color: white;
+  width: 90%;
   max-width: 425px;
   padding: 30px 30px 80px 30px;
   margin: 0 auto;
@@ -37,6 +38,7 @@
   border-radius: 30px;
   display: flex;
   padding-left: 10px;
+  width: 90%;
 }
 
 .add-text input {
@@ -46,6 +48,7 @@
   flex: 1;
   padding: 10px;
   font-size: 18px;
+  color: rgb(80, 80, 80);
 }
 
 .add-text button {
@@ -62,8 +65,16 @@
   margin: 20px;
 }
 
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
 .list-container li {
   list-style: none;
+  max-width: 285px;
+  overflow-wrap: break-word;
   font-size: 18px;
   user-select: none;
   cursor: pointer;
@@ -81,7 +92,6 @@ ul li.checked {
   top: 10px;
   height: 26px;
   width: 26px;
-  /* border-radius: 50%; */
   background-image: url("./To-Do-Img/images/unchecked.png");
   background-size: cover;
   background-position: center;
@@ -94,8 +104,7 @@ ul span {
   position: absolute;
   right: 0;
   top: 1px;
-  width: 40px;
-  height: 40px;
+  cursor: pointer;
   font-size: 30px;
   color: rgb(215, 215, 215);
   text-align: center;
@@ -106,4 +115,14 @@ ul span:hover {
   font-size: 30px;
   color: rgb(141, 137, 137);
   font-size: 40px;
+}
+
+@media (max-width: 325px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+  .add-text {
+    width: 100%;
+  }
 }
