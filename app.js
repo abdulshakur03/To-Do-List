@@ -3,7 +3,7 @@ const listContainer = document.querySelector(".list-container");
 
 function addList() {
   if (input.value === "") {
-    alert("input text to be added to the list");
+    alert("Task field cannot be empty!");
   } else {
     const div = document.createElement("div");
     listContainer.appendChild(div);
